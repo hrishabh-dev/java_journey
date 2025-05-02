@@ -9,6 +9,8 @@ public class user_input {
         String name=sc.nextLine();
         System.out.println("output");
         System.out.println(name);
+        // for integer input nextInt();
+        // for float inpput nextFloat();
 
     }
 
