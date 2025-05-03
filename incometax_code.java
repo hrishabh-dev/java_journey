@@ -12,6 +12,8 @@ public class incometax_code {
 
         sc.close();
         double tax=0;
+        double amount=25000;
+        double rebate=0;
 
         double taxincome=salary-75000;
         if (taxincome<0){
@@ -33,6 +35,12 @@ public class incometax_code {
             System.out.println("--------------------------");
             System.out.println("Tax at 5% :-"+tax);
             System.out.println("--------------------------");
+            rebate=amount-tax;
+            System.out.println("------------------------------------------");
+            System.out.println("Income lower than or equal 7 lacs rebate :- 25000");
+            System.out.println("-----------------------------------------");
+            System.out.println("No tax payable");
+            System.out.println("--------------------------");
 
         } else if (taxincome > 700000 && taxincome <= 1000000) {
             tax = 20000+ ((taxincome - 700000) * 0.10);
@@ -42,7 +50,7 @@ public class incometax_code {
             System.out.println("Tax on 5% :-"+a);
             System.out.println("Tax on 10% :-"+x);
             System.out.println("Total Tax calculated at 10% :-"+tax);
-            double rebate=25000-tax;
+            rebate=amount-tax;
             System.out.println("------------------------------------------");
             System.out.println("Income lower than or equal 7 lacs rebate :- 25000");
             System.out.println("-----------------------------------------");
