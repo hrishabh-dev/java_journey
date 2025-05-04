@@ -52,9 +52,11 @@ public class incometax_code {
             System.out.println("Total Tax calculated at 10% :-"+tax);
             rebate=amount-tax;
             System.out.println("------------------------------------------");
-            System.out.println("Income lower than or equal 7 lacs rebate :- 25000");
-            System.out.println("-----------------------------------------");
-            System.out.println("No tax payable");
+            double totalTaxWithSurcharge = tax *0.04;
+            System.out.println("Total  Health and education cess:-"+totalTaxWithSurcharge);
+            double su=tax+totalTaxWithSurcharge;
+            System.out.println("--------------------------------------");
+            System.out.println("Total tax with Health and education cess to be payable:-"+su);
             System.out.println("--------------------------");
         }else if (taxincome>1000000 && taxincome <=1200000 ){
             tax=(20000+30000)+((taxincome-1000000)*0.15);
