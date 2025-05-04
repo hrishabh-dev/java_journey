@@ -39,8 +39,8 @@ public class patterns {
             
             
         }
-        System.out.println();*/
-       }
+        System.out.println();
+        }   */
     }
     
 }
